@@ -65,4 +65,10 @@ export const data = [
     img: '/image-11.jpeg',
     selected: false,
   },
+  {
+    id: 12,
+    name: 'add image',
+    img: '/image-12.jpg',
+    selected: false,
+  },
 ]

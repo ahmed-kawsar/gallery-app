@@ -59,6 +59,10 @@ hr {
   cursor: pointer;
 }
 
+.productCard:last-child {
+  border: 2px dashed #ccc;
+}
+
 .productCard:hover {
   filter: brightness(70%);
   -webkit-transition: all 1s ease;
