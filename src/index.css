@@ -50,6 +50,9 @@ hr {
   .products {
     grid-template-columns: 1fr;
   }
+  .productCard:nth-child(1) {
+    grid-area: unset !important;
+  }
 }
 
 .productCard {
