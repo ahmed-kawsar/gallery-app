@@ -8,7 +8,9 @@ const Header = ({ selectedProductCount, handleDelete }) => {
           Selected
         </h3>
       </div>
-      <button onClick={handleDelete}>delete</button>
+      <button onClick={handleDelete}>
+        Delete file{selectedProductCount > 1 ? 's ' : ' '}
+      </button>
     </header>
   )
 }
