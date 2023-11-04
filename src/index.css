@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.app {
+  padding: 2em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+
+.header button {
+  background: none;
+  border: none;
+  color: rgba(165, 20, 20, 0.781);
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.itemCount {
+  display: flex;
+  gap: 1em;
+}
+
+hr {
+  margin-bottom: 1em;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
+
+.productCard {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.productCard:hover {
+  filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.checkbox {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+}
+
+.productCard:nth-child(1) {
+  grid-area: 1 / 1 / 3 / 3;
+}
